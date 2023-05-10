@@ -1,0 +1,31 @@
+html{
+    background-color: #F4E7D8;
+}
+body {
+    position: relative;
+    background-color: #F4E7D8;
+}
+#section1{
+    margin-top:50px;
+}
+#velkomstbillede{
+    width: 100%;
+}
+
+#navbar {
+    background-color: #F4E7D8;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+footer img{
+    height:40px;
+    margin-bottom: 10px;
+}
+
+footer p{
+    font-size: small;
+}
+
+form #nameInput, #emailInput, #message{
+    width: 60%;
+}

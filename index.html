@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.js"></script>
+    <script src="https://unpkg.com/vue@next"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+    <div id="app">
+        <nav id="navbar" class="navbar navbar-expand-sm fixed-top">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="Logo" style="height: 80px;">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section1">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section2">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section3">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+        <div id="section1" class="container-fluid col-sm-10" style="padding:100px 20px;">
+            <h1>Welcome</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore earum eum inventore, reprehenderit
+                numquam eius quisquam rem itaque culpa voluptatem, voluptatum perferendis sunt! Voluptas repudiandae
+                eveniet assumenda ab? Aperiam, consectetur optio at praesentium, accusantium voluptate reiciendis
+                voluptates voluptatibus ut, alias quas earum. Illum facere accusantium aspernatur assumenda repellendus
+                corrupti minima mollitia, eveniet vitae incidunt culpa fuga nostrum ullam eligendi cupiditate et quaerat
+                soluta perspiciatis cumque facilis ducimus. Exercitationem assumenda reiciendis amet voluptatibus nobis
+                cupiditate. Accusantium iure quibusdam nesciunt illum exercitationem numquam quae inventore nisi dolor,
+                id corrupti aperiam, reprehenderit neque deleniti. Repudiandae blanditiis impedit illo neque quibusdam!
+                Temporibus possimus assumenda blanditiis deleniti nemo odit voluptatum, praesentium quod voluptate quis
+                quos provident incidunt itaque ullam consequuntur ut tenetur quam, harum quo dignissimos? Accusantium
+                doloribus nisi voluptas soluta, repudiandae veniam asperiores, qui rem maiores nobis sed. Dicta, vel
+                ratione. Illo exercitationem doloribus natus numquam dolore nam asperiores explicabo, voluptatem eos,
+                consectetur porro voluptates libero rerum. Necessitatibus, sit itaque consequuntur similique voluptatem
+                hic obcaecati atque rem reiciendis dignissimos omnis quod libero natus enim illum sapiente. Accusamus
+                enim, sequi deserunt expedita quos voluptas ipsa mollitia nemo, est laborum rerum itaque quae suscipit
+                nam veritatis ab fugit minus, dolorem dolorum odit numquam iusto aspernatur totam beatae? Suscipit eaque
+                sunt reiciendis corrupti facilis. Quod nulla architecto eum asperiores, officia ducimus illum dicta,
+                fuga non excepturi commodi perferendis quisquam iure veniam eius voluptas aliquid expedita, quasi sequi
+                magnam ipsa. Tempora atque neque, reprehenderit animi aperiam suscipit numquam quam, fuga cum aliquam
+                tempore labore! Repellendus laboriosam ipsum provident!</p>
+            <img id="velkomstbillede" src="images/sunrise.jpg" alt="Sunrise">
+        </div>
+
+        <div id="section2" class="container-fluid col-sm-10 text-grey" style="padding:100px 20px;">
+            <h1>About us</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore earum eum inventore, reprehenderit
+                numquam eius quisquam rem itaque culpa voluptatem, voluptatum perferendis sunt! Voluptas repudiandae
+                eveniet assumenda ab? Aperiam, consectetur optio at praesentium, accusantium voluptate reiciendis
+                voluptates voluptatibus ut, alias quas earum. Illum facere accusantium aspernatur assumenda repellendus
+                corrupti minima mollitia, eveniet vitae incidunt culpa fuga nostrum ullam eligendi cupiditate et quaerat
+                soluta perspiciatis cumque facilis ducimus. Exercitationem assumenda reiciendis amet voluptatibus nobis
+                cupiditate. Accusantium iure quibusdam nesciunt illum exercitationem numquam quae inventore nisi dolor,
+                id corrupti aperiam, reprehenderit neque deleniti. Repudiandae blanditiis impedit illo neque quibusdam!
+                Temporibus possimus assumenda blanditiis deleniti nemo odit voluptatum, praesentium quod voluptate quis
+                quos provident incidunt itaque ullam consequuntur ut tenetur quam, harum quo dignissimos? Accusantium
+                doloribus nisi voluptas soluta, repudiandae veniam asperiores, qui rem maiores nobis sed. Dicta, vel
+                ratione. Illo exercitationem doloribus natus numquam dolore nam asperiores explicabo, voluptatem eos,
+                consectetur porro voluptates libero rerum. Necessitatibus, sit itaque consequuntur similique voluptatem
+                hic obcaecati atque rem reiciendis dignissimos omnis quod libero natus enim illum sapiente. Accusamus
+                enim, sequi deserunt expedita quos voluptas ipsa mollitia nemo, est laborum rerum itaque quae suscipit
+                nam veritatis ab fugit minus, dolorem dolorum odit numquam iusto aspernatur totam beatae? Suscipit eaque
+                sunt reiciendis corrupti facilis. Quod nulla architecto eum asperiores, officia ducimus illum dicta,
+                fuga non excepturi commodi perferendis quisquam iure veniam eius voluptas aliquid expedita, quasi sequi
+                magnam ipsa. Tempora atque neque, reprehenderit animi aperiam suscipit numquam quam, fuga cum aliquam
+                tempore labore! Repellendus laboriosam ipsum provident!</p>
+        </div>
+
+        <div id="section3" class="container-fluid col-sm-10" style="padding:100px 20px;">
+            <section class="mb-4">
+
+                <!--Section heading-->
+                <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+                <!--Section description-->
+                <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to
+                    contact us directly. Our team will come back to you within
+                    a matter of hours to help you.</p>
+
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-9 mb-md-0 mb-5">
+                        <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                            <!--Grid row-->
+                            <div class="row">
+
+                                <!--Grid column-->
+                                <div class="col-md-6">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="name" name="name" class="form-control">
+                                        <label for="name" class="">Your name</label>
+                                    </div>
+                                </div>
+                                <!--Grid column-->
+
+                                <!--Grid column-->
+                                <div class="col-md-6">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="email" name="email" class="form-control">
+                                        <label for="email" class="">Your email</label>
+                                    </div>
+                                </div>
+                                <!--Grid column-->
+
+                            </div>
+                            <!--Grid row-->
+
+                            <!--Grid row-->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="subject" name="subject" class="form-control">
+                                        <label for="subject" class="">Subject</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Grid row-->
+
+                            <!--Grid row-->
+                            <div class="row">
+
+                                <!--Grid column-->
+                                <div class="col-md-12">
+
+                                    <div class="md-form">
+                                        <textarea type="text" id="message" name="message" rows="2"
+                                            class="form-control md-textarea"></textarea>
+                                        <label for="message">Your message</label>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!--Grid row-->
+
+                        </form>
+
+                        <div class="text-center text-md-left">
+                            <a class="btn btn-primary"
+                                onclick="document.getElementById('contact-form').submit();">Send</a>
+                        </div>
+                        <div class="status"></div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-3 text-center">
+                        <ul class="list-unstyled mb-0">
+                            <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                                <p>San Francisco, CA 94126, USA</p>
+                            </li>
+
+                            <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                                <p>+ 01 234 567 89</p>
+                            </li>
+
+                            <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                                <p>contact@mdbootstrap.com</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+
+            </section>
+        </div>
+
+    </div>
+    <footer class="col-sm-12 text-center">
+        <p>Follow me on social media</p>
+        <a href="https://www.facebook.com/PandaClub.dk" target="_blank"><img src="images/facebook-icon.svg"
+                alt="Facebook" class="footer-logos"></a>
+        <a href="http://linkedin.com" target="_blank"><img src="images/linkedin-icon.svg" alt="LinkedIn"
+                class="footer-logos"></a>
+    </footer>
+</body>
+
+</html>
